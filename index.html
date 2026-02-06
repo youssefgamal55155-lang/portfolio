@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Youssef Gamal | Portfolio</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+*{ box-sizing: border-box; font-family: Arial, Tahoma;}
+body{ margin:0; background: linear-gradient(135deg,#020617,#0f172a); color:#e5e7eb; }
+
+/* Header */
+header{ text-align:center; padding:70px 20px; }
+.profile-img{ width:170px; height:170px; border-radius:50%; border:4px solid #38bdf8; object-fit:cover; animation: pulse 2.5s infinite; box-shadow:0 0 30px rgba(56,189,248,.7);}
+@keyframes pulse{0%{transform:scale(1);}50%{transform:scale(1.07);}100%{transform:scale(1);} }
+header h1{ margin:25px 0 10px; font-size:40px; color:#38bdf8; }
+header p{ color:#cbd5f5; font-size:18px; }
+
+/* Buttons */
+.buttons{ margin-top:30px; }
+.btn{ display:inline-block; margin:10px; padding:14px 30px; border-radius:30px; background:#38bdf8; color:#020617; font-weight:bold; text-decoration:none; transition:.3s; box-shadow:0 12px 25px rgba(56,189,248,.4);}
+.btn:hover{ transform:translateY(-7px) scale(1.06); box-shadow:0 25px 40px rgba(56,189,248,.7);}
+
+/* Sections */
+section{ max-width:950px; margin:auto; padding:55px 20px; }
+h2{ color:#38bdf8; border-left:4px solid #38bdf8; padding-left:12px; margin-bottom:25px; }
+.card{ background:#020617; padding:25px; border-radius:16px; box-shadow:0 15px 30px rgba(0,0,0,.45); transition:.3s; }
+.card:hover{ transform:translateY(-6px); }
+
+/* Lists & Icons */
+ul{ list-style:none; padding:0; }
+ul li{ padding:14px; margin:12px 0; background:#0f172a; border-radius:10px; display:flex; align-items:center; gap:14px; transition:.3s;}
+ul li:hover{ background:#020617; transform:translateX(8px);}
+ul li a{ color:#38bdf8; text-decoration:none; font-weight:bold;}
+.icon{ font-size:22px; color:#38bdf8; animation: iconPulse 2s infinite;}
+ul li:hover .icon{ animation: rotateIcon .6s linear; }
+@keyframes iconPulse{0%{transform:scale(1);}50%{transform:scale(1.15);}100%{transform:scale(1);}}
+@keyframes rotateIcon{from{transform:rotate(0deg);}to{transform:rotate(360deg);}}
+
+/* WhatsApp Floating Button */
+.whatsapp-float{ position:fixed; bottom:20px; right:20px; background:#25d366; color:#fff; width:60px; height:60px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:32px; box-shadow:0 10px 25px rgba(0,0,0,.4); animation: whatsappPulse 2s infinite; z-index:1000; }
+.whatsapp-float:hover{ transform:scale(1.1);}
+@keyframes whatsappPulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.7);} 70%{box-shadow:0 0 0 15px rgba(37,211,102,0);} 100%{box-shadow:0 0 0 0 rgba(37,211,102,0);}}
+
+/* Footer */
+footer{ text-align:center; padding:25px; color:#94a3b8; background:#020617; font-size:14px; }
+</style>
+</head>
+<body>
+
+<header>
+<img src="me.jpg" class="profile-img">
+<h1>Youssef Gamal</h1>
+<p>Web Developer | PHP & MySQL | Building Practical Web Solutions</p>
+<div class="buttons">
+<a href="#projects" class="btn">مشاريعي</a>
+<a href="#contact" class="btn">تواصل معي</a>
+</div>
+</header>
+
+<section>
+<h2>نبذة عنّي</h2>
+<div class="card">
+أنا مطور ويب متخصص في بناء مواقع وتطبيقات عملية  <strong></strong> مع الاهتمام بجودة الكود وتجربة المستخدم.
+</div>
+</section>
+
+<section>
+<h2>مهاراتي</h2>
+<div class="card">
+<ul>
+<li><i class="icon fa-brands fa-html5"></i> HTML5 & CSS3</li>
+<li><i class="icon fa-brands fa-php"></i> PHP</li>
+<li><i class="icon fa-solid fa-database"></i> MySQL (Database)</li>
+<li><i class="icon fa-brands fa-js"></i> JavaScript</li>
+<li><i class="icon fa-brands fa-python"></i> Python</li>
+</ul>
+</div>
+</section>
+
+<section id="projects">
+<h2>مشاريعي</h2>
+<div class="card">
+<ul>
+<li><i class="icon fa-solid fa-gem"></i> نظام إدارة شهادات الألماس</li>
+<li><i class="icon fa-solid fa-magnifying-glass"></i> موقع بحث وتصفية بيانات</li>
+<li><i class="icon fa-solid fa-user"></i> Portfolio شخصي</li>
+<li><i class="icon fa-solid fa-code"></i> تنفيذ مواقع ويب حسب الطلب</li>
+</ul>
+</div>
+</section>
+
+<section id="contact">
+<h2>تواصل معي</h2>
+<div class="card">
+<ul>
+<li><i class="icon fa-brands fa-whatsapp"></i> <a href="https://wa.me/201140224223" target="_blank">01140224223</a></li>
+<li><i class="icon fa-brands fa-facebook"></i> <a href="https://www.facebook.com/share/17cVX1ifMC/" target="_blank">Facebook</a></li>
+<li><i class="icon fa-brands fa-instagram"></i> <a href="https://www.instagram.com/youssef_gamal70/?hl=en" target="_blank">Instagram</a></li>
+<li><i class="icon fa-solid fa-envelope"></i> <a href="mailto:yosefgamal5151@gmail.com">yosefgamal5151@gmail.com</a></li>
+</ul>
+</div>
+</section>
+
+<footer>
+© 2026 – Youssef Gamal | Web Developer
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/201140224223" target="_blank" class="whatsapp-float">
+<i class="fa-brands fa-whatsapp"></i>
+</a>
+
+</body>
+</html>
